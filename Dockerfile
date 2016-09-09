@@ -5,7 +5,8 @@ MAINTAINER Vitor Silva Lima <vitor.lima2@fatec.sp.gov.br>
 # Set the WILDFLY_VERSION env variable
 ENV JBOSS_HOME /opt/eap
 ENV JAVA_HOME /opt/java
-
+ENV MNGT_USER admin
+ENV MNGT_PWD  admin
 #add binaries for eap and java
 RUN mkdir -p /opt/eap /opt/java
 COPY jboss-eap-7.0/ $JBOSS_HOME
